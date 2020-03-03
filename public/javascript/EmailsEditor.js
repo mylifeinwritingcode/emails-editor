@@ -914,7 +914,7 @@ EmailsEditor.getRandomInt = function getRandomInt(min, max)
  * [en] Generates a random email address, login length of 10 characters, domain from the list: gmail.com, yandex.ru, mail.ru.
  * @public
  * @static
- * @name getRandomInt
+ * @name getRandomEmail
  * @method
  * @property {Function}
  * @returns {String}
@@ -1034,7 +1034,7 @@ EmailsEditor.prototype.getKeyboardCode = function getKeyboardCode(event)
  * [ru] Удаляет тег с электронным адресом и электронный адрес из списка.
  * [en] Removes an email tag and an email address from the list.
  * @private
- * @name getKeyboardCode
+ * @name deleteOutputEmail
  * @method
  * @param {Object} emailBlock -
  *  [ru] Ссылка на тег с электронным адресом.
@@ -1063,7 +1063,7 @@ EmailsEditor.prototype.deleteOutputEmail = function deleteOutputEmail(emailBlock
  * [ru] Выводит тег с электронным адресом и привязывает к не события.
  * [en] Displays a tag with an email address and attaches to no events.
  * @private
- * @name getKeyboardCode
+ * @name outputEmail
  * @method
  * @param {Boolean} isValid -
  *  [ru] Указывает является ли выводимый электронный адрес валидным.
@@ -1108,7 +1108,7 @@ EmailsEditor.prototype.outputEmail = function outputEmail(isValid, email)
  * [ru] Разбирает строку и собирает перед выводом список с электронными адресами.
  * [en] Parses a string and collects a list with email addresses before output.
  * @private
- * @name getKeyboardCode
+ * @name setEmail
  * @method
  * @param {String|Array} emailList -
  *  [ru] Строка (разделенная запятыми) или массив с электронными адресами.
@@ -1173,7 +1173,7 @@ EmailsEditor.prototype.setEmail = function setEmail(emailList)
  * [ru] Вызывается при потере фокуса.
  * [en] Called when focus is lost.
  * @private
- * @name getKeyboardCode
+ * @name blurFromInputFieldEmail
  * @method
  */
 EmailsEditor.prototype.blurFromInputFieldEmail = function blurFromInputFieldEmail()
